@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebecca Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#home">🏠 Home</a></li>
+          <li><a href="#commands">💻 Commands</a></li>
+        </ul>
+      </nav>
+    
+      <section id="home" class="section">
+        <h1 class="glitch" data-text="UzyBot">Rebecca</h1>
+        <div class="card-wrapper">
+            <div class="bio-card">
+              <p>
+                Rebecca – your chaotic AI bestie 🤖💥 Pulls up with vibes, crime, and command spam.
+                Built for mayhem, memes, and makin' bank. Add me or stay basic, luv 💖
+              </p>
+              <a href="https://discord.com/oauth2/authorize?client_id=1361712742335123791&permissions=1759218604441591&integration_type=0&scope=applications.commands+bot" class="btn">＋ INVITE ME</a>
+            </div>
+          
+            <div id="commands" class="command-list">
+              <h2>📜 Available Commands</h2>
+              <ul>
+                <li><code>r!balance</code> – Check your balance</li>
+                <li><code>r!crime</code> – Do some shady work</li>
+                <li><code>r!daily</code> – Claim daily reward</li>
+                <li><code>r!jailbreak</code> – Try to escape</li>
+                <li><code>r!bribe</code> – Lower your sentence</li>
+                <li><code>r!criminalrecord</code> – View your crime log</li>
+              </ul>
+            </div>
+          </div>
+          
+    <div class="cursor-glow" id="cursor"></div>
+    <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+    });
+    </script>
+</body>
+</html>
